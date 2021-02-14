@@ -1,0 +1,14 @@
+%
+% data save
+%
+
+
+filename = strcat(datestr(now, 'yyyymmdd_HHMMSS'), '_result');
+
+dat = ["out.N1", "out.N2", "out.N3", "out.N4", "out.acc_dd_x_calc", "out.acc_dd_y_calc", "out.acc_dd_z_calc", "out.d_pitch", "out.d_pitch_filter", "out.d_roll", "out.d_roll_filter", "out.d_x", "out.d_y", "out.d_z", "out.d_yaw", "out.d_yaw_filter", "out.dd_x", "out.dd_x_filter", "out.dd_y", "out.dd_y_filter", "out.dd_z", "out.dd_z_filter", "out.gyro_d_pitch_calc", "out.gyro_d_roll_calc", "out.gyro_d_yaw_calc", "out.mag_d_pitch_calc", "out.mag_d_roll_calc", "out.mag_d_yaw_calc", "out.pitch", "out.pitch_filter", "out.r_d_yaw_control", "out.r_d_yaw_filter", "out.r_d_yaw_inst, out.r_pitch_control", "out.r_pitch_filter", "out.r_pitch_inst", "out.r_roll_control", "out.r_roll_filter", "out.r_roll_inst", "out.r_yaw_control", "out.r_yaw_filter", "out.r_yaw_inst", "out.roll", "out.roll_filter", "out.yaw", "out.yaw_filter", "out.tout", "out.x", "out.y", "out.z"];
+xlswrite(filename, dat);
+%dat = [out.N1.data out.N2.data out.N3.data out.N4.data out.acc_dd_x_calc.data out.acc_dd_y_calc.data out.acc_dd_z_calc.data out.d_pitch.data out.d_pitch_filter.data out.d_roll.data out.d_roll_filter.data out.d_x.data out.d_y.data out.d_z.data out.d_yaw.data out.d_yaw_filter.data out.dd_x.data out.dd_x_filter.data out.dd_y.data out.dd_y_filter.data out.dd_z.data out.dd_z_filter.data out.gyro_d_pitch_calc.data out.gyro_d_roll_calc.data out.gyro_d_yaw_calc.data out.mag_d_pitch_calc.data out.mag_d_roll_calc.data out.mag_d_yaw_calc.data out.pitch.data out.pitch_filter.data out.r_d_yaw_control.data out.r_d_yaw_filter.data out.r_d_yaw_inst.data out.r_pitch_control.data out.r_pitch_filter.data out.r_pitch_inst.data out.r_roll_control.data out.r_roll_filter.data out.r_roll_inst.data out.r_yaw_control.data out.r_yaw_filter.data out.r_yaw_inst.data out.roll.data out.roll_filter.data out.yaw.data out.yaw_filter.data out.tout.data out.x.data out.y.data out.z.data];
+%dat = [out.N1.data out.N2.data out.N3.data out.N4.data out.acc_dd_x_calc.data out.acc_dd_y_calc.data out.acc_dd_z_calc.data out.d_pitch.data out.d_pitch_filter.data out.d_roll.data out.d_roll_filter.data out.d_x.data out.d_y.data out.d_z.data out.d_yaw.data out.d_yaw_filter.data out.dd_x.data out.dd_x_filter.data out.dd_y.data out.dd_y_filter.data out.dd_z.data out.dd_z_filter.data out.gyro_d_pitch_calc.data out.gyro_d_roll_calc.data out.gyro_d_yaw_calc.data out.mag_d_pitch_calc.data out.mag_d_roll_calc.data out.mag_d_yaw_calc.data out.pitch.data out.pitch_filter.data out.r_d_yaw_control.data out.r_d_yaw_filter.data];
+
+%dat = [out.N1.data];
+xlswrite(filename, dat);
